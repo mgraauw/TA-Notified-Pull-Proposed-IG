@@ -1,0 +1,12 @@
+{
+    "resourceType": "Task",
+    "id": "cancel-task",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe"
+        }
+    ],
+    "status": "cancelled",
+    "intent": "proposal"
+}
