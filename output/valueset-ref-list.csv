@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues,0.1.0,draft,,TanpTaskParameterValues,TA Notified Pull Notification Task Parameters,"The codes for the TA Notified Pull Notification Task Parameters","StructureDefinition/tanp-task","SCT,Internal,LOINC"
+https://www.twiin.nl/tanp/ValueSet/tanp-taskvalues,0.1.0,draft,,TanpTaskValues,TA Notified Pull Notification Task,"The codes for the TA Notified Pull Notification Task","StructureDefinition/tanp-task","Internal"

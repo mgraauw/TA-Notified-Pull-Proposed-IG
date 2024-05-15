@@ -1,0 +1,364 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.twiin.nl/tanp/Task/AdditionalTask> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AdditionalTask"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"^^xsd:anyURI ;
+       fhir:link <https://www.twiin.nl/tanp/StructureDefinition/tanp-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"AdditionalTask\"> </a><a name=\"hcAdditionalTask\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;AdditionalTask&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tanp-task.html\">TA Notified Pull Notification Task</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe</p><p><b>groupIdentifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0</p><p><b>status</b>: requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: Pull Notification <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#pull-notification)</span></p><p><b>for</b>: <span><code>http://fhir.nl/fhir/NamingSystem/bsn</code>/172642863</span></p><p><b>authoredOn</b>: 2023-04-13 15:01:54+0200</p><p><b>requester</b>: <span><code>http://example.com/fhir/NamingSystem/dummy</code>/sending-ehr-system-id</span></p><p><b>owner</b>: <span><code>http://example.com/fhir/NamingSystem/dummy</code>/receiving-organization-id</span></p><h3>Restrictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>?? --&gt; 2023-10-14 15:36:05+0200</td></tr></table><blockquote><p><b>input</b></p><p><b>type</b>: Authorization Base <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#authorization-base)</span></p><p><b>value</b>: ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Patient demographics panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#79191-3)</span></p><p><b>value</b>: Patient?_include=Patient:general-practitioner</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Payment sources Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48768-6)</span></p><p><b>value</b>: Coverage?_include=Coverage:payor:Organization&amp;_include=Coverage:payor:Patient</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Treatment instructions <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11291000146105)</span></p><p><b>value</b>: Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Living will and advance directive record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11341000146107)</span></p><p><b>value</b>: Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Functional status assessment note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#47420-5)</span></p><p><b>value</b>: Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Problem list - Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11450-4)</span></p><p><b>value</b>: Condition</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Residence and accommodation circumstances - finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365508006)</span></p><p><b>value</b>: Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Finding relating to drug misuse behavior <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228366006)</span></p><p><b>value</b>: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Finding relating to alcohol drinking behavior <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228273003)</span></p><p><b>value</b>: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Finding of tobacco use and exposure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365980008)</span></p><p><b>value</b>: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Diet education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11816003)</span></p><p><b>value</b>: NutritionOrder</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Health concerns Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75310-3)</span></p><p><b>value</b>: Flag</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Allergies and adverse reactions Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48765-2)</span></p><p><b>value</b>: AllergyIntolerance</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Medication regimen behavior finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#422979000)</span></p><p><b>value</b>: MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&amp;_include=MedicationStatement:medication</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#16076005)</span></p><p><b>value</b>: MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&amp;_include=MedicationRequest:medication</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Provider medication administration instructions <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#422037009)</span></p><p><b>value</b>: MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&amp;_include=MedicationDispense:medication</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of medical device use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#46264-8)</span></p><p><b>value</b>: DeviceUseStatement?_include=DeviceUseStatement:device</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of Immunization Narrative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11369-6)</span></p><p><b>value</b>: Immunization?status=completed</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Blood pressure panel with all children optional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9)</span></p><p><b>value</b>: Observation/$lastn?code=http://loinc.org|85354-9</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>value</b>: Observation/$lastn?code=http://loinc.org|29463-7</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>value</b>: Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Laboratory test <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#15220000)</span></p><p><b>value</b>: Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&amp;_include=Observation:related-target&amp;_include=Observation:specimen</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of Procedures Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#47519-4)</span></p><p><b>value</b>: Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of Hospitalizations+Outpatient visits Narrative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#46240-8)</span></p><p><b>value</b>: Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: ProcedureRequest?status=active</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: ImmunizationRecommendation</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: DeviceRequest?status=active&amp;_include=DeviceRequest:device</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: Appointment?status=booked,pending,proposed</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Additional documentation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77599-9)</span></p><p><b>value</b>: DocumentReference?status=current</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0" ]
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "pull-notification" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/bsn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "172642863" ]
+     ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2023-04-13T15:01:54+02:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://example.com/fhir/NamingSystem/dummy"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "sending-ehr-system-id" ]
+     ]
+  ] ; # 
+  fhir:owner [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://example.com/fhir/NamingSystem/dummy"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "receiving-organization-id" ]
+     ]
+  ] ; # 
+  fhir:restriction [
+     fhir:period [
+       fhir:end [ fhir:v "2023-10-14T15:36:05+02:00"^^xsd:dateTime ]
+     ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "authorization-base" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:79191-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "79191-3" ] ;
+         fhir:display [ fhir:v "Patient demographics panel" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Patient?_include=Patient:general-practitioner" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:48768-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48768-6" ] ;
+         fhir:display [ fhir:v "Payment sources Document" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Coverage?_include=Coverage:payor:Organization&_include=Coverage:payor:Patient" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:11291000146105 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11291000146105" ] ;
+         fhir:display [ fhir:v "Treatment instructions" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:11341000146107 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11341000146107" ] ;
+         fhir:display [ fhir:v "Living will and advance directive record" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:47420-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "47420-5" ] ;
+         fhir:display [ fhir:v "Functional status assessment note" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list - Reported" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Condition" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:365508006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "365508006" ] ;
+         fhir:display [ fhir:v "Residence and accommodation circumstances - finding" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:228366006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "228366006" ] ;
+         fhir:display [ fhir:v "Finding relating to drug misuse behavior" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:228273003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "228273003" ] ;
+         fhir:display [ fhir:v "Finding relating to alcohol drinking behavior" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:365980008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "365980008" ] ;
+         fhir:display [ fhir:v "Finding of tobacco use and exposure" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:11816003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11816003" ] ;
+         fhir:display [ fhir:v "Diet education" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "NutritionOrder" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:75310-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "75310-3" ] ;
+         fhir:display [ fhir:v "Health concerns Document" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Flag" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ] ;
+         fhir:display [ fhir:v "Allergies and adverse reactions Document" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "AllergyIntolerance" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:422979000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "422979000" ] ;
+         fhir:display [ fhir:v "Medication regimen behavior finding" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&_include=MedicationStatement:medication" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:16076005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "16076005" ] ;
+         fhir:display [ fhir:v "Prescription" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&_include=MedicationRequest:medication" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:422037009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "422037009" ] ;
+         fhir:display [ fhir:v "Provider medication administration instructions" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&_include=MedicationDispense:medication" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:46264-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "46264-8" ] ;
+         fhir:display [ fhir:v "History of medical device use" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "DeviceUseStatement?_include=DeviceUseStatement:device" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:11369-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11369-6" ] ;
+         fhir:display [ fhir:v "History of Immunization Narrative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Immunization?status=completed" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:85354-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "85354-9" ] ;
+         fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation/$lastn?code=http://loinc.org|85354-9" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:29463-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Body weight" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation/$lastn?code=http://loinc.org|29463-7" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:8302-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8302-2" ] ;
+         fhir:display [ fhir:v "Body height" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a sct:15220000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15220000" ] ;
+         fhir:display [ fhir:v "Laboratory test" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&_include=Observation:related-target&_include=Observation:specimen" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:47519-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "47519-4" ] ;
+         fhir:display [ fhir:v "History of Procedures Document" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:46240-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "46240-8" ] ;
+         fhir:display [ fhir:v "History of Hospitalizations+Outpatient visits Narrative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:18776-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "18776-5" ] ;
+         fhir:display [ fhir:v "Plan of care note" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "ProcedureRequest?status=active" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:18776-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "18776-5" ] ;
+         fhir:display [ fhir:v "Plan of care note" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "ImmunizationRecommendation" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:18776-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "18776-5" ] ;
+         fhir:display [ fhir:v "Plan of care note" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "DeviceRequest?status=active&_include=DeviceRequest:device" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:18776-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "18776-5" ] ;
+         fhir:display [ fhir:v "Plan of care note" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Appointment?status=booked,pending,proposed" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:77599-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "77599-9" ] ;
+         fhir:display [ fhir:v "Additional documentation" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "DocumentReference?status=current" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tanp-taskparametervalues"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-tanp-codes.html"><code>https://www.twiin.nl/tanp/CodeSystem/tanp-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-tanp-codes.html#tanp-codes-authorization-base">authorization-base</a></td><td>Authorization</td></tr><tr><td><a href="CodeSystem-tanp-codes.html#tanp-codes-get-workflow-task">get-workflow-task</a></td><td>Get Workflow Task</td></tr><tr><td><a href="CodeSystem-tanp-codes.html#tanp-codes-read-resource">read-resource</a></td><td>Read Resource</td></tr><tr><td><a href="CodeSystem-tanp-codes.html#tanp-codes-search-resource">search-resource</a></td><td>Search Resource</td></tr></table></li><li>Include all codes defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
+  </text>
+  <url value="https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues"/>
+  <version value="0.1.0"/>
+  <name value="TanpTaskParameterValues"/>
+  <title value="TA Notified Pull Notification Task Parameters"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-05-10T11:59:16+02:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="The codes for the TA Notified Pull Notification Task Parameters"/>
+  <compose>
+    <include>
+      <system value="https://www.twiin.nl/tanp/CodeSystem/tanp-codes"/>
+      <concept>
+        <code value="authorization-base"/>
+        <display value="Authorization"/>
+      </concept>
+      <concept>
+        <code value="get-workflow-task"/>
+        <display value="Get Workflow Task"/>
+      </concept>
+      <concept>
+        <code value="read-resource"/>
+        <display value="Read Resource"/>
+      </concept>
+      <concept>
+        <code value="search-resource"/>
+        <display value="Search Resource"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+    </include>
+  </compose>
+</ValueSet>

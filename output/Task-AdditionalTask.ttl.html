@@ -1,0 +1,517 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>AdditionalTask - TTL Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.6"}
+    h3,h4,h5,h6{--heading-prefix:"2.6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>AdditionalTask</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">tanotifiedpull - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://www.twiin.nl/tanp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Task-AdditionalTask.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Task-AdditionalTask.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Task-AdditionalTask.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: AdditionalTask - TTL Representation</h2>
+
+
+<p><a href="Task-AdditionalTask.ttl" no-download="true">Raw ttl</a> | <a href="Task-AdditionalTask.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;https://loinc.org/rdf/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Task ;
+  <a href="http://hl7.org/fhir/R4B/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:v</a> &quot;AdditionalTask&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:v</a> &quot;https://www.twiin.nl/tanp/StructureDefinition/tanp-task&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4B/rdf.html#reference">fhir:link</a> &lt;https://www.twiin.nl/tanp/StructureDefinition/tanp-task&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Task&lt;/b&gt;&lt;a name=\&quot;AdditionalTask\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcAdditionalTask\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Task &amp;quot;AdditionalTask&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-tanp-task.html\&quot;&gt;TA Notified Pull Notification Task&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\&quot; title=\&quot;As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\&quot;&gt;Uniform Resource Identifier (URI)&lt;/a&gt;/urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe&lt;/p&gt;&lt;p&gt;&lt;b&gt;groupIdentifier&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\&quot; title=\&quot;As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\&quot;&gt;Uniform Resource Identifier (URI)&lt;/a&gt;/urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: proposal&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Pull Notification &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-tanp-codes.html\&quot;&gt;TA Notified Pull CodeSystem&lt;/a&gt;#pull-notification)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;span&gt;&lt;code&gt;http://fhir.nl/fhir/NamingSystem/bsn&lt;/code&gt;/172642863&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2023-04-13 15:01:54+0200&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;span&gt;&lt;code&gt;http://example.com/fhir/NamingSystem/dummy&lt;/code&gt;/sending-ehr-system-id&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;span&gt;&lt;code&gt;http://example.com/fhir/NamingSystem/dummy&lt;/code&gt;/receiving-organization-id&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Restrictions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;?? --&amp;gt; 2023-10-14 15:36:05+0200&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Authorization Base &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-tanp-codes.html\&quot;&gt;TA Notified Pull CodeSystem&lt;/a&gt;#authorization-base)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Patient demographics panel &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#79191-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Patient?_include=Patient:general-practitioner&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Payment sources Document &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#48768-6)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Coverage?_include=Coverage:payor:Organization&amp;amp;_include=Coverage:payor:Patient&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Treatment instructions &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#11291000146105)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Living will and advance directive record &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#11341000146107)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Functional status assessment note &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#47420-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Problem list - Reported &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#11450-4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Condition&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Residence and accommodation circumstances - finding &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#365508006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Finding relating to drug misuse behavior &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#228366006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Finding relating to alcohol drinking behavior &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#228273003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Finding of tobacco use and exposure &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#365980008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Diet education &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#11816003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: NutritionOrder&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Health concerns Document &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#75310-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Flag&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Allergies and adverse reactions Document &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#48765-2)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: AllergyIntolerance&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Medication regimen behavior finding &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#422979000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&amp;amp;_include=MedicationStatement:medication&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Prescription &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#16076005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&amp;amp;_include=MedicationRequest:medication&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Provider medication administration instructions &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#422037009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&amp;amp;_include=MedicationDispense:medication&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: History of medical device use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#46264-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: DeviceUseStatement?_include=DeviceUseStatement:device&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: History of Immunization Narrative &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#11369-6)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Immunization?status=completed&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Blood pressure panel with all children optional &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#85354-9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation/$lastn?code=http://loinc.org|85354-9&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Body weight &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#29463-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation/$lastn?code=http://loinc.org|29463-7&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Body height &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#8302-2)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Laboratory test &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#15220000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&amp;amp;_include=Observation:related-target&amp;amp;_include=Observation:specimen&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: History of Procedures Document &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#47519-4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: History of Hospitalizations+Outpatient visits Narrative &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#46240-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Plan of care note &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#18776-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: ProcedureRequest?status=active&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Plan of care note &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#18776-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: ImmunizationRecommendation&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Plan of care note &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#18776-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: DeviceRequest?status=active&amp;amp;_include=DeviceRequest:device&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Plan of care note &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#18776-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Appointment?status=booked,pending,proposed&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Additional documentation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#77599-9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: DocumentReference?status=current&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.groupIdentifier">fhir:groupIdentifier</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;requested&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;proposal&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;https://www.twiin.nl/tanp/CodeSystem/tanp-codes&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;pull-notification&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.for">fhir:for</a> [
+<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://fhir.nl/fhir/NamingSystem/bsn&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;172642863&quot; ]     ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.authoredOn">fhir:authoredOn</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">fhir:v</a> &quot;2023-04-13T15:01:54+02:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.requester">fhir:requester</a> [
+<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/NamingSystem/dummy&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;sending-ehr-system-id&quot; ]     ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.owner">fhir:owner</a> [
+<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://example.com/fhir/NamingSystem/dummy&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;receiving-organization-id&quot; ]     ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.restriction">fhir:restriction</a> [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.restriction.period">fhir:period</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Period#Period.end">fhir:end</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-14T15:36:05+02:00&quot;^^xsd:dateTime ]     ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4B/task.html#Task.input">fhir:input</a> ( [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;https://www.twiin.nl/tanp/CodeSystem/tanp-codes&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;authorization-base&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:79191-3 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;79191-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Patient demographics panel&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Patient?_include=Patient:general-practitioner&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:48768-6 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;48768-6&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Payment sources Document&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Coverage?_include=Coverage:payor:Organization&amp;_include=Coverage:payor:Patient&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:11291000146105 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;11291000146105&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Treatment instructions&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:11341000146107 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;11341000146107&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Living will and advance directive record&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:47420-5 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;47420-5&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Functional status assessment note&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:11450-4 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;11450-4&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Problem list - Reported&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Condition&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:365508006 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;365508006&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Residence and accommodation circumstances - finding&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:228366006 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;228366006&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Finding relating to drug misuse behavior&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:228273003 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;228273003&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Finding relating to alcohol drinking behavior&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:365980008 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;365980008&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Finding of tobacco use and exposure&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:11816003 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;11816003&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Diet education&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;NutritionOrder&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:75310-3 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;75310-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Health concerns Document&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Flag&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:48765-2 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;48765-2&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Allergies and adverse reactions Document&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;AllergyIntolerance&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:422979000 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;422979000&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Medication regimen behavior finding&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&amp;_include=MedicationStatement:medication&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:16076005 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;16076005&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Prescription&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&amp;_include=MedicationRequest:medication&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:422037009 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;422037009&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Provider medication administration instructions&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&amp;_include=MedicationDispense:medication&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:46264-8 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;46264-8&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;History of medical device use&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;DeviceUseStatement?_include=DeviceUseStatement:device&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:11369-6 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;11369-6&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;History of Immunization Narrative&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Immunization?status=completed&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:85354-9 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;85354-9&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Blood pressure panel with all children optional&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation/$lastn?code=http://loinc.org|85354-9&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:29463-7 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;29463-7&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Body weight&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation/$lastn?code=http://loinc.org|29463-7&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:8302-2 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;8302-2&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Body height&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:15220000 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;15220000&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Laboratory test&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&amp;_include=Observation:related-target&amp;_include=Observation:specimen&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:47519-4 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;47519-4&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;History of Procedures Document&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:46240-8 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;46240-8&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;History of Hospitalizations+Outpatient visits Narrative&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:18776-5 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;18776-5&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Plan of care note&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ProcedureRequest?status=active&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:18776-5 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;18776-5&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Plan of care note&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;ImmunizationRecommendation&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:18776-5 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;18776-5&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Plan of care note&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;DeviceRequest?status=active&amp;_include=DeviceRequest:device&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:18776-5 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;18776-5&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Plan of care note&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Appointment?status=booked,pending,proposed&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:77599-9 ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> &quot;77599-9&quot; ] ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;Additional documentation&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4B/task.html#Task.input.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:v</a> &quot;DocumentReference?status=current&quot; ]
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package ta.np#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, May 10, 2024 11:59+0200">2024-05-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

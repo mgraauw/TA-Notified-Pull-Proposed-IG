@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.twiin.nl/tanp/Task/NewTask> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NewTask"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"^^xsd:anyURI ;
+       fhir:link <https://www.twiin.nl/tanp/StructureDefinition/tanp-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"NewTask\"> </a><a name=\"hcNewTask\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;NewTask&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tanp-task.html\">TA Notified Pull Notification Task</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe</p><p><b>groupIdentifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0</p><p><b>status</b>: requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: Pull Notification <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#pull-notification)</span></p><p><b>for</b>: <span><code>http://fhir.nl/fhir/NamingSystem/bsn</code>/172642863</span></p><p><b>authoredOn</b>: 2023-04-13 15:01:54+0200</p><p><b>requester</b>: <span><code>http://example.com/fhir/NamingSystem/dummy</code>/sending-ehr-system-id</span></p><p><b>owner</b>: <span><code>http://example.com/fhir/NamingSystem/dummy</code>/receiving-organization-id</span></p><h3>Restrictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>?? --&gt; 2023-10-14 15:36:05+0200</td></tr></table><blockquote><p><b>input</b></p><p><b>type</b>: Authorization Base <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#authorization-base)</span></p><p><b>value</b>: ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Read resource <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#read-resource)</span></p><p><b>value</b>: <a href=\"Observation-SomeObservation.html\">Observation/SomeObservation</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Additional documentation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77599-9)</span></p><p><b>value</b>: DocumentReference?status=current</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe" ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0" ]
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "pull-notification" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/bsn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "172642863" ]
+     ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2023-04-13T15:01:54+02:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://example.com/fhir/NamingSystem/dummy"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "sending-ehr-system-id" ]
+     ]
+  ] ; # 
+  fhir:owner [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://example.com/fhir/NamingSystem/dummy"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "receiving-organization-id" ]
+     ]
+  ] ; # 
+  fhir:restriction [
+     fhir:period [
+       fhir:end [ fhir:v "2023-10-14T15:36:05+02:00"^^xsd:dateTime ]
+     ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "authorization-base" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "read-resource" ] ;
+         fhir:display [ fhir:v "Read resource" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.twiin.nl/tanp/Observation/SomeObservation> ;
+       fhir:reference [ fhir:v "Observation/SomeObservation" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         a loinc:77599-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "77599-9" ] ;
+         fhir:display [ fhir:v "Additional documentation" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "DocumentReference?status=current" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

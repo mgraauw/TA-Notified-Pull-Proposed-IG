@@ -1,0 +1,125 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task",
+      "StructureDefinition-tanp-canceltask.html" : "TA Notified Pull Cancellation Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task",
+      "StructureDefinition-tanp-canceltask.html" : "TA Notified Pull Cancellation Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task",
+      "StructureDefinition-tanp-canceltask.html" : "TA Notified Pull Cancellation Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-code",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "TaskCode",
+      "title" : "Task Codes",
+      "description" : "Codes indicating the type of action that is expected to be performed",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/task-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1396"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task",
+      "StructureDefinition-tanp-canceltask.html" : "TA Notified Pull Cancellation Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-intent",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "systems" : [
+        "http://hl7.org/fhir/request-intent",
+        "http://hl7.org/fhir/task-intent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1240"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task",
+      "StructureDefinition-tanp-canceltask.html" : "TA Notified Pull Cancellation Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "systems" : ["http://hl7.org/fhir/task-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.790"],
+      "sources" : ["2.16.840.1.113883.4.642.3.790"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task",
+      "StructureDefinition-tanp-canceltask.html" : "TA Notified Pull Cancellation Task"
+    },
+    {
+      "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TanpTaskParameterValues",
+      "title" : "TA Notified Pull Notification Task Parameters",
+      "description" : "The codes for the TA Notified Pull Notification Task Parameters",
+      "systems" : [
+        "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+        "http://loinc.org",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task"
+    },
+    {
+      "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskvalues",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TanpTaskValues",
+      "title" : "TA Notified Pull Notification Task",
+      "description" : "The codes for the TA Notified Pull Notification Task",
+      "systems" : ["https://www.twiin.nl/tanp/CodeSystem/tanp-codes"],
+      "uses" : {
+      },
+      "StructureDefinition-tanp-task.html" : "TA Notified Pull Notification Task"
+    }
+  ]
+}

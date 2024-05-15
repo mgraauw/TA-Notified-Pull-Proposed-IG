@@ -1,0 +1,10 @@
+[AdditionalTask]: Task-AdditionalTask.html
+[CancelTask]: Task-CancelTask.html
+[NewTask]: Task-NewTask.html
+[SomeObservation]: Observation-SomeObservation.html
+[SomePatient]: Patient-SomePatient.html
+[CancellationTask]: StructureDefinition-tanp-canceltask.html
+[TanpCodes]: CodeSystem-tanp-codes.html
+[NotificationTask]: StructureDefinition-tanp-task.html
+[TanpTaskValues]: ValueSet-tanp-taskvalues.html
+[TanpTaskParameterValues]: ValueSet-tanp-taskparametervalues.html

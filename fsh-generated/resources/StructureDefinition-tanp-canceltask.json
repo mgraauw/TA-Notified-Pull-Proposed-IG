@@ -1,0 +1,30 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tanp-canceltask",
+  "url": "https://www.twiin.nl/tanp/StructureDefinition/tanp-canceltask",
+  "name": "CancellationTask",
+  "title": "TA Notified Pull Cancellation Task",
+  "status": "draft",
+  "description": "The Sending System can cancel a previous Notification using a conditional update interaction \r\non the Task that represents that previous Notification.",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.identifier",
+        "path": "Task.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Task.status",
+        "path": "Task.status",
+        "patternCode": "cancelled"
+      }
+    ]
+  }
+}

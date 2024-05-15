@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tanp-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://www.twiin.nl/tanp/CodeSystem/tanp-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pull-notification<a name=\"tanp-codes-pull-notification\"> </a></td><td>Pull Notification</td></tr><tr><td style=\"white-space:nowrap\">authorization-base<a name=\"tanp-codes-authorization-base\"> </a></td><td>Authorization Base</td></tr><tr><td style=\"white-space:nowrap\">get-workflow-task<a name=\"tanp-codes-get-workflow-task\"> </a></td><td>Get Workflow Task</td></tr><tr><td style=\"white-space:nowrap\">read-resource<a name=\"tanp-codes-read-resource\"> </a></td><td>Read Resource</td></tr><tr><td style=\"white-space:nowrap\">search-resource<a name=\"tanp-codes-search-resource\"> </a></td><td>Search Resource</td></tr></table></div>"
+  },
+  "url" : "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+  "version" : "0.1.0",
+  "name" : "TanpCodes",
+  "title" : "TA Notified Pull CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-05-10T11:59:16+02:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "The codes for the TA Notified Pull",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "pull-notification",
+    "display" : "Pull Notification"
+  },
+  {
+    "code" : "authorization-base",
+    "display" : "Authorization Base"
+  },
+  {
+    "code" : "get-workflow-task",
+    "display" : "Get Workflow Task"
+  },
+  {
+    "code" : "read-resource",
+    "display" : "Read Resource"
+  },
+  {
+    "code" : "search-resource",
+    "display" : "Search Resource"
+  }]
+}

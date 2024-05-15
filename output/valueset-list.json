@@ -1,0 +1,26 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TanpTaskParameterValues",
+      "title" : "TA Notified Pull Notification Task Parameters",
+      "description" : "The codes for the TA Notified Pull Notification Task Parameters",
+      "systems" : [
+        "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+        "http://loinc.org",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskvalues",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TanpTaskValues",
+      "title" : "TA Notified Pull Notification Task",
+      "description" : "The codes for the TA Notified Pull Notification Task",
+      "systems" : ["https://www.twiin.nl/tanp/CodeSystem/tanp-codes"]
+    }
+  ]
+}

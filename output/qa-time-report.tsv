@@ -1,0 +1,12 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-ta.np.json	3704	-	0	0	0	0	0	0	3	50	0	0	0	0	0	0	0	2	0	0	88	83	0	0	0	3	0	1
+fsh-generated/resources/CodeSystem-tanp-codes.json	780	12	1	0	0	1	0	0	0	19	0	0	0	0	0	0	0	0	0	0	24	2890	0	0	0	0	0	0
+fsh-generated/resources/Observation-SomeObservation.json	476	10	0	0	0	0	0	0	0	75	0	0	0	0	0	0	0	0	0	0	16	34	0	0	0	0	0	0
+fsh-generated/resources/Patient-SomePatient.json	270	12	0	0	0	0	0	0	0	368	0	0	0	0	0	0	0	0	0	0	17	20	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-tanp-canceltask.json	884	10	0	0	0	0	0	76	1	43	0	0	0	0	0	0	0	3	0	0	247	1765	0	0	0	6	1	2
+fsh-generated/resources/StructureDefinition-tanp-task.json	1807	10	0	0	0	0	0	82	0	36	0	0	1	0	0	0	0	1	0	0	296	1026	0	0	0	8	0	1
+fsh-generated/resources/Task-AdditionalTask.json	10441	13	0	0	0	0	0	0	0	214	0	0	0	0	0	0	0	0	0	0	63	54	0	0	0	0	0	0
+fsh-generated/resources/Task-CancelTask.json	345	13	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	19	0	0	0	0	0	0
+fsh-generated/resources/Task-NewTask.json	2067	11	0	0	0	0	0	0	0	51	0	0	0	0	0	0	0	0	0	0	29	27	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tanp-taskparametervalues.json	1060	10	0	0	0	0	0	0	1	119	0	0	0	0	0	0	0	0	0	0	31	3041	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-tanp-taskvalues.json	585	10	1	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	24	66	0	0	0	0	0	0

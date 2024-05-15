@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "TanpTaskParameterValues",
+  "id": "tanp-taskparametervalues",
+  "title": "TA Notified Pull Notification Task Parameters",
+  "description": "The codes for the TA Notified Pull Notification Task Parameters",
+  "url": "https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+        "concept": [
+          {
+            "code": "authorization-base",
+            "display": "Authorization"
+          },
+          {
+            "code": "get-workflow-task",
+            "display": "Get Workflow Task"
+          },
+          {
+            "code": "read-resource",
+            "display": "Read Resource"
+          },
+          {
+            "code": "search-resource",
+            "display": "Search Resource"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "system": "http://loinc.org"
+      }
+    ]
+  }
+}

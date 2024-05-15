@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "SomeObservation",
+  "valueQuantity": {
+    "value": 6.3,
+    "unit": "mmol/L",
+    "system": "http://unitsofmeasure.org"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "15074-8",
+        "system": "http://loinc.org",
+        "display": "Glucose [Moles/volume] in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/SomePatient"
+  },
+  "effectiveDateTime": "2023-04-13T15:01:54+02:00"
+}

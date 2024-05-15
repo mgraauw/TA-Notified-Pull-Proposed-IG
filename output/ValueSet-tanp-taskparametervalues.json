@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tanp-taskparametervalues",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-tanp-codes.html\"><code>https://www.twiin.nl/tanp/CodeSystem/tanp-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-tanp-codes.html#tanp-codes-authorization-base\">authorization-base</a></td><td>Authorization</td></tr><tr><td><a href=\"CodeSystem-tanp-codes.html#tanp-codes-get-workflow-task\">get-workflow-task</a></td><td>Get Workflow Task</td></tr><tr><td><a href=\"CodeSystem-tanp-codes.html#tanp-codes-read-resource\">read-resource</a></td><td>Read Resource</td></tr><tr><td><a href=\"CodeSystem-tanp-codes.html#tanp-codes-search-resource\">search-resource</a></td><td>Search Resource</td></tr></table></li><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+  },
+  "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues",
+  "version" : "0.1.0",
+  "name" : "TanpTaskParameterValues",
+  "title" : "TA Notified Pull Notification Task Parameters",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-05-10T11:59:16+02:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "The codes for the TA Notified Pull Notification Task Parameters",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+      "concept" : [{
+        "code" : "authorization-base",
+        "display" : "Authorization"
+      },
+      {
+        "code" : "get-workflow-task",
+        "display" : "Get Workflow Task"
+      },
+      {
+        "code" : "read-resource",
+        "display" : "Read Resource"
+      },
+      {
+        "code" : "search-resource",
+        "display" : "Search Resource"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct"
+    },
+    {
+      "system" : "http://loinc.org"
+    }]
+  }
+}

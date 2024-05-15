@@ -1,0 +1,82 @@
+[
+  {
+    "outputFile": "CodeSystem-tanp-codes.json",
+    "fshName": "TanpCodes",
+    "fshType": "CodeSystem",
+    "fshFile": "Task.fsh",
+    "startLine": 183,
+    "endLine": 194
+  },
+  {
+    "outputFile": "Observation-SomeObservation.json",
+    "fshName": "SomeObservation",
+    "fshType": "Instance",
+    "fshFile": "Task.fsh",
+    "startLine": 46,
+    "endLine": 55
+  },
+  {
+    "outputFile": "Patient-SomePatient.json",
+    "fshName": "SomePatient",
+    "fshType": "Instance",
+    "fshFile": "Task.fsh",
+    "startLine": 57,
+    "endLine": 63
+  },
+  {
+    "outputFile": "StructureDefinition-tanp-canceltask.json",
+    "fshName": "CancellationTask",
+    "fshType": "Profile",
+    "fshFile": "Task.fsh",
+    "startLine": 144,
+    "endLine": 152
+  },
+  {
+    "outputFile": "StructureDefinition-tanp-task.json",
+    "fshName": "NotificationTask",
+    "fshType": "Profile",
+    "fshFile": "Task.fsh",
+    "startLine": 5,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Task-AdditionalTask.json",
+    "fshName": "AdditionalTask",
+    "fshType": "Instance",
+    "fshFile": "Task.fsh",
+    "startLine": 65,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Task-CancelTask.json",
+    "fshName": "CancelTask",
+    "fshType": "Instance",
+    "fshFile": "Task.fsh",
+    "startLine": 154,
+    "endLine": 160
+  },
+  {
+    "outputFile": "Task-NewTask.json",
+    "fshName": "NewTask",
+    "fshType": "Instance",
+    "fshFile": "Task.fsh",
+    "startLine": 21,
+    "endLine": 44
+  },
+  {
+    "outputFile": "ValueSet-tanp-taskparametervalues.json",
+    "fshName": "TanpTaskParameterValues",
+    "fshType": "ValueSet",
+    "fshFile": "Task.fsh",
+    "startLine": 170,
+    "endLine": 181
+  },
+  {
+    "outputFile": "ValueSet-tanp-taskvalues.json",
+    "fshName": "TanpTaskValues",
+    "fshType": "ValueSet",
+    "fshFile": "Task.fsh",
+    "startLine": 162,
+    "endLine": 168
+  }
+]

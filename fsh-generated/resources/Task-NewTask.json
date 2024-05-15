@@ -1,0 +1,92 @@
+{
+  "resourceType": "Task",
+  "id": "NewTask",
+  "meta": {
+    "profile": [
+      "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"
+    ]
+  },
+  "groupIdentifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe"
+    }
+  ],
+  "restriction": {
+    "period": {
+      "end": "2023-10-14T15:36:05+02:00"
+    }
+  },
+  "for": {
+    "identifier": {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "value": "172642863"
+    }
+  },
+  "requester": {
+    "identifier": {
+      "system": "http://example.com/fhir/NamingSystem/dummy",
+      "value": "sending-ehr-system-id"
+    }
+  },
+  "owner": {
+    "identifier": {
+      "system": "http://example.com/fhir/NamingSystem/dummy",
+      "value": "receiving-organization-id"
+    }
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "authorization-base",
+            "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"
+          }
+        ]
+      },
+      "valueString": "ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "read-resource",
+            "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+            "display": "Read resource"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Observation/SomeObservation"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "77599-9",
+            "system": "http://loinc.org",
+            "display": "Additional documentation"
+          }
+        ]
+      },
+      "valueString": "DocumentReference?status=current"
+    }
+  ],
+  "status": "requested",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "code": "pull-notification",
+        "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"
+      }
+    ]
+  },
+  "authoredOn": "2023-04-13T15:01:54+02:00"
+}

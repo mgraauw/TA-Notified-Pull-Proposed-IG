@@ -1,0 +1,414 @@
+{
+  "resourceType": "Task",
+  "id": "AdditionalTask",
+  "meta": {
+    "profile": [
+      "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"
+    ]
+  },
+  "groupIdentifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe"
+    }
+  ],
+  "restriction": {
+    "period": {
+      "end": "2023-10-14T15:36:05+02:00"
+    }
+  },
+  "for": {
+    "identifier": {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "value": "172642863"
+    }
+  },
+  "requester": {
+    "identifier": {
+      "system": "http://example.com/fhir/NamingSystem/dummy",
+      "value": "sending-ehr-system-id"
+    }
+  },
+  "owner": {
+    "identifier": {
+      "system": "http://example.com/fhir/NamingSystem/dummy",
+      "value": "receiving-organization-id"
+    }
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "authorization-base",
+            "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"
+          }
+        ]
+      },
+      "valueString": "ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "79191-3",
+            "system": "http://loinc.org",
+            "display": "Patient demographics panel"
+          }
+        ]
+      },
+      "valueString": "Patient?_include=Patient:general-practitioner"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "48768-6",
+            "system": "http://loinc.org",
+            "display": "Payment sources Document"
+          }
+        ]
+      },
+      "valueString": "Coverage?_include=Coverage:payor:Organization&_include=Coverage:payor:Patient"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "11291000146105",
+            "system": "http://snomed.info/sct",
+            "display": "Treatment instructions"
+          }
+        ]
+      },
+      "valueString": "Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "11341000146107",
+            "system": "http://snomed.info/sct",
+            "display": "Living will and advance directive record"
+          }
+        ]
+      },
+      "valueString": "Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "47420-5",
+            "system": "http://loinc.org",
+            "display": "Functional status assessment note"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "11450-4",
+            "system": "http://loinc.org",
+            "display": "Problem list - Reported"
+          }
+        ]
+      },
+      "valueString": "Condition"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "365508006",
+            "system": "http://snomed.info/sct",
+            "display": "Residence and accommodation circumstances - finding"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "228366006",
+            "system": "http://snomed.info/sct",
+            "display": "Finding relating to drug misuse behavior"
+          }
+        ]
+      },
+      "valueString": "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "228273003",
+            "system": "http://snomed.info/sct",
+            "display": "Finding relating to alcohol drinking behavior"
+          }
+        ]
+      },
+      "valueString": "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "365980008",
+            "system": "http://snomed.info/sct",
+            "display": "Finding of tobacco use and exposure"
+          }
+        ]
+      },
+      "valueString": "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "11816003",
+            "system": "http://snomed.info/sct",
+            "display": "Diet education"
+          }
+        ]
+      },
+      "valueString": "NutritionOrder"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "75310-3",
+            "system": "http://loinc.org",
+            "display": "Health concerns Document"
+          }
+        ]
+      },
+      "valueString": "Flag"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "48765-2",
+            "system": "http://loinc.org",
+            "display": "Allergies and adverse reactions Document"
+          }
+        ]
+      },
+      "valueString": "AllergyIntolerance"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "422979000",
+            "system": "http://snomed.info/sct",
+            "display": "Medication regimen behavior finding"
+          }
+        ]
+      },
+      "valueString": "MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&_include=MedicationStatement:medication"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "16076005",
+            "system": "http://snomed.info/sct",
+            "display": "Prescription"
+          }
+        ]
+      },
+      "valueString": "MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&_include=MedicationRequest:medication"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "422037009",
+            "system": "http://snomed.info/sct",
+            "display": "Provider medication administration instructions"
+          }
+        ]
+      },
+      "valueString": "MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&_include=MedicationDispense:medication"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "46264-8",
+            "system": "http://loinc.org",
+            "display": "History of medical device use"
+          }
+        ]
+      },
+      "valueString": "DeviceUseStatement?_include=DeviceUseStatement:device"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "11369-6",
+            "system": "http://loinc.org",
+            "display": "History of Immunization Narrative"
+          }
+        ]
+      },
+      "valueString": "Immunization?status=completed"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "85354-9",
+            "system": "http://loinc.org",
+            "display": "Blood pressure panel with all children optional"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http://loinc.org|85354-9"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "29463-7",
+            "system": "http://loinc.org",
+            "display": "Body weight"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http://loinc.org|29463-7"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "8302-2",
+            "system": "http://loinc.org",
+            "display": "Body height"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "15220000",
+            "system": "http://snomed.info/sct",
+            "display": "Laboratory test"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&_include=Observation:related-target&_include=Observation:specimen"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "47519-4",
+            "system": "http://loinc.org",
+            "display": "History of Procedures Document"
+          }
+        ]
+      },
+      "valueString": "Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "46240-8",
+            "system": "http://loinc.org",
+            "display": "History of Hospitalizations+Outpatient visits Narrative"
+          }
+        ]
+      },
+      "valueString": "Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "18776-5",
+            "system": "http://loinc.org",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "ProcedureRequest?status=active"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "18776-5",
+            "system": "http://loinc.org",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "ImmunizationRecommendation"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "18776-5",
+            "system": "http://loinc.org",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "DeviceRequest?status=active&_include=DeviceRequest:device"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "18776-5",
+            "system": "http://loinc.org",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "Appointment?status=booked,pending,proposed"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "77599-9",
+            "system": "http://loinc.org",
+            "display": "Additional documentation"
+          }
+        ]
+      },
+      "valueString": "DocumentReference?status=current"
+    }
+  ],
+  "status": "requested",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "code": "pull-notification",
+        "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"
+      }
+    ]
+  },
+  "authoredOn": "2023-04-13T15:01:54+02:00"
+}

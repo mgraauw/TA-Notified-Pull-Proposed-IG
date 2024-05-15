@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TanpCodes",
+      "title" : "TA Notified Pull CodeSystem",
+      "description" : "The codes for the TA Notified Pull"
+    }
+  ]
+}

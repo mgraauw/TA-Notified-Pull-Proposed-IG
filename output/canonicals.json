@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "tanp-codes",
+    "type" : "CodeSystem",
+    "url" : "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+    "version" : "0.1.0",
+    "name" : "TanpCodes"
+  },
+  {
+    "id" : "ta.np",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.twiin.nl/tanp/ImplementationGuide/ta.np",
+    "version" : "0.1.0",
+    "name" : "tanotifiedpull"
+  },
+  {
+    "id" : "tanp-canceltask",
+    "type" : "StructureDefinition",
+    "url" : "https://www.twiin.nl/tanp/StructureDefinition/tanp-canceltask",
+    "version" : "0.1.0",
+    "name" : "CancellationTask"
+  },
+  {
+    "id" : "tanp-task",
+    "type" : "StructureDefinition",
+    "url" : "https://www.twiin.nl/tanp/StructureDefinition/tanp-task",
+    "version" : "0.1.0",
+    "name" : "NotificationTask"
+  },
+  {
+    "id" : "tanp-taskparametervalues",
+    "type" : "ValueSet",
+    "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues",
+    "version" : "0.1.0",
+    "name" : "TanpTaskParameterValues"
+  },
+  {
+    "id" : "tanp-taskvalues",
+    "type" : "ValueSet",
+    "url" : "https://www.twiin.nl/tanp/ValueSet/tanp-taskvalues",
+    "version" : "0.1.0",
+    "name" : "TanpTaskValues"
+  }
+]

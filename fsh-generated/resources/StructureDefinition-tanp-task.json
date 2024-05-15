@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tanp-task",
+  "url": "https://www.twiin.nl/tanp/StructureDefinition/tanp-task",
+  "name": "NotificationTask",
+  "title": "TA Notified Pull Notification Task",
+  "status": "draft",
+  "description": "The TA Notified Pull Notification message is sent by the Sending System when it needs to notify the \r\nReceiving System about one or more FHIR resources that have been made available to the Receiving System.",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.identifier",
+        "path": "Task.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Task.groupIdentifier",
+        "path": "Task.groupIdentifier",
+        "min": 1
+      },
+      {
+        "id": "Task.status",
+        "path": "Task.status",
+        "patternCode": "requested"
+      },
+      {
+        "id": "Task.code",
+        "path": "Task.code",
+        "min": 1
+      },
+      {
+        "id": "Task.code.coding",
+        "path": "Task.code.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.twiin.nl/tanp/ValueSet/tanp-taskvalues"
+        }
+      },
+      {
+        "id": "Task.requester",
+        "path": "Task.requester",
+        "min": 1
+      },
+      {
+        "id": "Task.owner",
+        "path": "Task.owner",
+        "min": 1
+      },
+      {
+        "id": "Task.input.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.twiin.nl/tanp/ValueSet/tanp-taskparametervalues"
+        }
+      }
+    ]
+  }
+}

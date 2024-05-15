@@ -1,0 +1,133 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ta.np",
+  "url": "https://www.twiin.nl/tanp/ImplementationGuide/ta.np",
+  "version": "0.1.0",
+  "name": "tanotifiedpull",
+  "status": "draft",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "ta.np",
+  "fhirVersion": [
+    "4.3.0"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Task/AdditionalTask"
+        },
+        "name": "AdditionalTask",
+        "exampleCanonical": "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"
+      },
+      {
+        "reference": {
+          "reference": "Task/CancelTask"
+        },
+        "name": "CancelTask",
+        "exampleCanonical": "https://www.twiin.nl/tanp/StructureDefinition/tanp-canceltask"
+      },
+      {
+        "reference": {
+          "reference": "Task/NewTask"
+        },
+        "name": "NewTask",
+        "exampleCanonical": "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"
+      },
+      {
+        "reference": {
+          "reference": "Observation/SomeObservation"
+        },
+        "name": "SomeObservation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/SomePatient"
+        },
+        "name": "SomePatient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tanp-canceltask"
+        },
+        "name": "TA Notified Pull Cancellation Task",
+        "description": "The Sending System can cancel a previous Notification using a conditional update interaction \r\non the Task that represents that previous Notification.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/tanp-codes"
+        },
+        "name": "TA Notified Pull CodeSystem",
+        "description": "The codes for the TA Notified Pull",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tanp-task"
+        },
+        "name": "TA Notified Pull Notification Task",
+        "description": "The TA Notified Pull Notification message is sent by the Sending System when it needs to notify the \r\nReceiving System about one or more FHIR resources that have been made available to the Receiving System.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tanp-taskvalues"
+        },
+        "name": "TA Notified Pull Notification Task",
+        "description": "The codes for the TA Notified Pull Notification Task",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tanp-taskparametervalues"
+        },
+        "name": "TA Notified Pull Notification Task Parameters",
+        "description": "The codes for the TA Notified Pull Notification Task Parameters",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../exp-params.json"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tanp-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://www.twiin.nl/tanp/CodeSystem/tanp-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">pull-notification<a name="tanp-codes-pull-notification"> </a></td><td>Pull Notification</td></tr><tr><td style="white-space:nowrap">authorization-base<a name="tanp-codes-authorization-base"> </a></td><td>Authorization Base</td></tr><tr><td style="white-space:nowrap">get-workflow-task<a name="tanp-codes-get-workflow-task"> </a></td><td>Get Workflow Task</td></tr><tr><td style="white-space:nowrap">read-resource<a name="tanp-codes-read-resource"> </a></td><td>Read Resource</td></tr><tr><td style="white-space:nowrap">search-resource<a name="tanp-codes-search-resource"> </a></td><td>Search Resource</td></tr></table></div>
+  </text>
+  <url value="https://www.twiin.nl/tanp/CodeSystem/tanp-codes"/>
+  <version value="0.1.0"/>
+  <name value="TanpCodes"/>
+  <title value="TA Notified Pull CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-05-10T11:59:16+02:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="The codes for the TA Notified Pull"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="pull-notification"/>
+    <display value="Pull Notification"/>
+  </concept>
+  <concept>
+    <code value="authorization-base"/>
+    <display value="Authorization Base"/>
+  </concept>
+  <concept>
+    <code value="get-workflow-task"/>
+    <display value="Get Workflow Task"/>
+  </concept>
+  <concept>
+    <code value="read-resource"/>
+    <display value="Read Resource"/>
+  </concept>
+  <concept>
+    <code value="search-resource"/>
+    <display value="Search Resource"/>
+  </concept>
+</CodeSystem>

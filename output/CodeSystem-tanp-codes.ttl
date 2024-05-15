@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.twiin.nl/tanp/CodeSystem/tanp-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tanp-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://www.twiin.nl/tanp/CodeSystem/tanp-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pull-notification<a name=\"tanp-codes-pull-notification\"> </a></td><td>Pull Notification</td></tr><tr><td style=\"white-space:nowrap\">authorization-base<a name=\"tanp-codes-authorization-base\"> </a></td><td>Authorization Base</td></tr><tr><td style=\"white-space:nowrap\">get-workflow-task<a name=\"tanp-codes-get-workflow-task\"> </a></td><td>Get Workflow Task</td></tr><tr><td style=\"white-space:nowrap\">read-resource<a name=\"tanp-codes-read-resource\"> </a></td><td>Read Resource</td></tr><tr><td style=\"white-space:nowrap\">search-resource<a name=\"tanp-codes-search-resource\"> </a></td><td>Search Resource</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.twiin.nl/tanp/CodeSystem/tanp-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TanpCodes"] ; # 
+  fhir:title [ fhir:v "TA Notified Pull CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-10T11:59:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes for the TA Notified Pull"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pull-notification" ] ;
+     fhir:display [ fhir:v "Pull Notification" ]
+  ] [
+     fhir:code [ fhir:v "authorization-base" ] ;
+     fhir:display [ fhir:v "Authorization Base" ]
+  ] [
+     fhir:code [ fhir:v "get-workflow-task" ] ;
+     fhir:display [ fhir:v "Get Workflow Task" ]
+  ] [
+     fhir:code [ fhir:v "read-resource" ] ;
+     fhir:display [ fhir:v "Read Resource" ]
+  ] [
+     fhir:code [ fhir:v "search-resource" ] ;
+     fhir:display [ fhir:v "Search Resource" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.twiin.nl/tanp/ImplementationGuide/ta.np",
+  "name" : "tanotifiedpull",
+  "title" : null,
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "ta.np",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 10 May, 2024 11:59:16 +0200",
+  "dateISO8601" : "2024-05-10T11:59:16+02:00",
+  "errs" : 0,
+  "warnings" : 11,
+  "hints" : 8,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.3.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1204030832
+}

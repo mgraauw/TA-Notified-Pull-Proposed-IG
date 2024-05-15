@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "TanpCodes",
+  "id": "tanp-codes",
+  "title": "TA Notified Pull CodeSystem",
+  "description": "The codes for the TA Notified Pull",
+  "url": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+  "concept": [
+    {
+      "code": "pull-notification",
+      "display": "Pull Notification"
+    },
+    {
+      "code": "authorization-base",
+      "display": "Authorization Base"
+    },
+    {
+      "code": "get-workflow-task",
+      "display": "Get Workflow Task"
+    },
+    {
+      "code": "read-resource",
+      "display": "Read Resource"
+    },
+    {
+      "code": "search-resource",
+      "display": "Search Resource"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 5
+}

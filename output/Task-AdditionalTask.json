@@ -1,0 +1,418 @@
+{
+  "resourceType": "Task",
+  "id": "AdditionalTask",
+  "meta": {
+    "profile": [
+      "https://www.twiin.nl/tanp/StructureDefinition/tanp-task"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"AdditionalTask\"> </a><a name=\"hcAdditionalTask\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;AdditionalTask&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tanp-task.html\">TA Notified Pull Notification Task</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe</p><p><b>groupIdentifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0</p><p><b>status</b>: requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: Pull Notification <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#pull-notification)</span></p><p><b>for</b>: <span><code>http://fhir.nl/fhir/NamingSystem/bsn</code>/172642863</span></p><p><b>authoredOn</b>: 2023-04-13 15:01:54+0200</p><p><b>requester</b>: <span><code>http://example.com/fhir/NamingSystem/dummy</code>/sending-ehr-system-id</span></p><p><b>owner</b>: <span><code>http://example.com/fhir/NamingSystem/dummy</code>/receiving-organization-id</span></p><h3>Restrictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>?? --&gt; 2023-10-14 15:36:05+0200</td></tr></table><blockquote><p><b>input</b></p><p><b>type</b>: Authorization Base <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tanp-codes.html\">TA Notified Pull CodeSystem</a>#authorization-base)</span></p><p><b>value</b>: ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Patient demographics panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#79191-3)</span></p><p><b>value</b>: Patient?_include=Patient:general-practitioner</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Payment sources Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48768-6)</span></p><p><b>value</b>: Coverage?_include=Coverage:payor:Organization&amp;_include=Coverage:payor:Patient</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Treatment instructions <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11291000146105)</span></p><p><b>value</b>: Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Living will and advance directive record <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11341000146107)</span></p><p><b>value</b>: Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Functional status assessment note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#47420-5)</span></p><p><b>value</b>: Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Problem list - Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11450-4)</span></p><p><b>value</b>: Condition</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Residence and accommodation circumstances - finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365508006)</span></p><p><b>value</b>: Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Finding relating to drug misuse behavior <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228366006)</span></p><p><b>value</b>: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Finding relating to alcohol drinking behavior <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228273003)</span></p><p><b>value</b>: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Finding of tobacco use and exposure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365980008)</span></p><p><b>value</b>: Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Diet education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11816003)</span></p><p><b>value</b>: NutritionOrder</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Health concerns Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75310-3)</span></p><p><b>value</b>: Flag</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Allergies and adverse reactions Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48765-2)</span></p><p><b>value</b>: AllergyIntolerance</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Medication regimen behavior finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#422979000)</span></p><p><b>value</b>: MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&amp;_include=MedicationStatement:medication</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#16076005)</span></p><p><b>value</b>: MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&amp;_include=MedicationRequest:medication</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Provider medication administration instructions <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#422037009)</span></p><p><b>value</b>: MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&amp;_include=MedicationDispense:medication</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of medical device use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#46264-8)</span></p><p><b>value</b>: DeviceUseStatement?_include=DeviceUseStatement:device</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of Immunization Narrative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11369-6)</span></p><p><b>value</b>: Immunization?status=completed</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Blood pressure panel with all children optional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9)</span></p><p><b>value</b>: Observation/$lastn?code=http://loinc.org|85354-9</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>value</b>: Observation/$lastn?code=http://loinc.org|29463-7</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>value</b>: Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Laboratory test <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#15220000)</span></p><p><b>value</b>: Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&amp;_include=Observation:related-target&amp;_include=Observation:specimen</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of Procedures Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#47519-4)</span></p><p><b>value</b>: Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: History of Hospitalizations+Outpatient visits Narrative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#46240-8)</span></p><p><b>value</b>: Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: ProcedureRequest?status=active</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: ImmunizationRecommendation</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: DeviceRequest?status=active&amp;_include=DeviceRequest:device</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Plan of care note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18776-5)</span></p><p><b>value</b>: Appointment?status=booked,pending,proposed</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Additional documentation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77599-9)</span></p><p><b>value</b>: DocumentReference?status=current</p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:6128cfe7-0e89-4d37-ba90-e4ca3b3fcbbe"
+    }
+  ],
+  "groupIdentifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:484639e6-e647-464c-8722-6e8a73cda4e0"
+  },
+  "status": "requested",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+        "code": "pull-notification"
+      }
+    ]
+  },
+  "for": {
+    "identifier": {
+      "system": "http://fhir.nl/fhir/NamingSystem/bsn",
+      "value": "172642863"
+    }
+  },
+  "authoredOn": "2023-04-13T15:01:54+02:00",
+  "requester": {
+    "identifier": {
+      "system": "http://example.com/fhir/NamingSystem/dummy",
+      "value": "sending-ehr-system-id"
+    }
+  },
+  "owner": {
+    "identifier": {
+      "system": "http://example.com/fhir/NamingSystem/dummy",
+      "value": "receiving-organization-id"
+    }
+  },
+  "restriction": {
+    "period": {
+      "end": "2023-10-14T15:36:05+02:00"
+    }
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+            "code": "authorization-base"
+          }
+        ]
+      },
+      "valueString": "ZGFhNDFjY2MtZGFmMi00YjZkLThiNDYtN2JlZDk1MWEyYzk2"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "79191-3",
+            "display": "Patient demographics panel"
+          }
+        ]
+      },
+      "valueString": "Patient?_include=Patient:general-practitioner"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48768-6",
+            "display": "Payment sources Document"
+          }
+        ]
+      },
+      "valueString": "Coverage?_include=Coverage:payor:Organization&_include=Coverage:payor:Patient"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "11291000146105",
+            "display": "Treatment instructions"
+          }
+        ]
+      },
+      "valueString": "Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11291000146105"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "11341000146107",
+            "display": "Living will and advance directive record"
+          }
+        ]
+      },
+      "valueString": "Consent?category=http%3A%2F%2Fsnomed.info%2Fsct%7C11341000146107"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "47420-5",
+            "display": "Functional status assessment note"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C118228005,http%3A%2F%2Fsnomed.info%2Fsct%7C384821006"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem list - Reported"
+          }
+        ]
+      },
+      "valueString": "Condition"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "365508006",
+            "display": "Residence and accommodation circumstances - finding"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365508006"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "228366006",
+            "display": "Finding relating to drug misuse behavior"
+          }
+        ]
+      },
+      "valueString": "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228366006"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "228273003",
+            "display": "Finding relating to alcohol drinking behavior"
+          }
+        ]
+      },
+      "valueString": "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C228273003"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "365980008",
+            "display": "Finding of tobacco use and exposure"
+          }
+        ]
+      },
+      "valueString": "Observation?code=http%3A%2F%2Fsnomed.info%2Fsct%7C365980008"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "11816003",
+            "display": "Diet education"
+          }
+        ]
+      },
+      "valueString": "NutritionOrder"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "75310-3",
+            "display": "Health concerns Document"
+          }
+        ]
+      },
+      "valueString": "Flag"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "Allergies and adverse reactions Document"
+          }
+        ]
+      },
+      "valueString": "AllergyIntolerance"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "422979000",
+            "display": "Medication regimen behavior finding"
+          }
+        ]
+      },
+      "valueString": "MedicationStatement?category=urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3|6&_include=MedicationStatement:medication"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "16076005",
+            "display": "Prescription"
+          }
+        ]
+      },
+      "valueString": "MedicationRequest?category=http%3A%2F%2Fsnomed.info%2Fsct%7C16076005&_include=MedicationRequest:medication"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "422037009",
+            "display": "Provider medication administration instructions"
+          }
+        ]
+      },
+      "valueString": "MedicationDispense?category=http%3A%2F%2Fsnomed.info%2Fsct%7C422037009&_include=MedicationDispense:medication"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "46264-8",
+            "display": "History of medical device use"
+          }
+        ]
+      },
+      "valueString": "DeviceUseStatement?_include=DeviceUseStatement:device"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11369-6",
+            "display": "History of Immunization Narrative"
+          }
+        ]
+      },
+      "valueString": "Immunization?status=completed"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "85354-9",
+            "display": "Blood pressure panel with all children optional"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http://loinc.org|85354-9"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29463-7",
+            "display": "Body weight"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http://loinc.org|29463-7"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8302-2",
+            "display": "Body height"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?code=http://loinc.org|8302-2,http://loinc.org|8306-3,http://loinc.org|8308-9"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "15220000",
+            "display": "Laboratory test"
+          }
+        ]
+      },
+      "valueString": "Observation/$lastn?category=http%3A%2F%2Fsnomed.info%2Fsct%7C275711006&_include=Observation:related-target&_include=Observation:specimen"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of Procedures Document"
+          }
+        ]
+      },
+      "valueString": "Procedure?category=http%3A%2F%2Fsnomed.info%2Fsct%7C387713003"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "46240-8",
+            "display": "History of Hospitalizations+Outpatient visits Narrative"
+          }
+        ]
+      },
+      "valueString": "Encounter?class=http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CIMP,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CACUTE,http%3A%2F%hl7.org%2Ffhir%2Fv3%2FActCode%7CNONAC"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "ProcedureRequest?status=active"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "ImmunizationRecommendation"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "DeviceRequest?status=active&_include=DeviceRequest:device"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of care note"
+          }
+        ]
+      },
+      "valueString": "Appointment?status=booked,pending,proposed"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "77599-9",
+            "display": "Additional documentation"
+          }
+        ]
+      },
+      "valueString": "DocumentReference?status=current"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+tanotifiedpull : Validation Results
+=========================================
+
+err = 0, warn = 11, info = 8
+IG Publisher Version: 1.6.6 Out of date - current version is 1.6.7
+Generated Fri May 10 12:00:08 CEST 2024. FHIR version 4.3.0 for ta.np#0.1.0 (canonical = https://www.twiin.nl/tanp)
+ Build Errors : 0 / 9 / 0
+ C:\Source\ta-notifiedpull\fsh-generated\resources\CodeSystem-tanp-codes : 0 / 0 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\ImplementationGuide-ta.np : 0 / 1 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\Observation-SomeObservation : 0 / 1 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\Patient-SomePatient : 0 / 0 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\StructureDefinition-tanp-canceltask : 0 / 0 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\StructureDefinition-tanp-task : 0 / 0 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\Task-AdditionalTask : 0 / 0 / 4
+ C:\Source\ta-notifiedpull\fsh-generated\resources\Task-CancelTask : 0 / 0 / 2
+ C:\Source\ta-notifiedpull\fsh-generated\resources\Task-NewTask : 0 / 0 / 5
+ C:\Source\ta-notifiedpull\fsh-generated\resources\ValueSet-tanp-taskparametervalues : 0 / 0 / 1
+ C:\Source\ta-notifiedpull\fsh-generated\resources\ValueSet-tanp-taskvalues : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/AdditionalTask.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/CancelTask.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/NewTask.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SomeObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SomePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated\resources\CodeSystem-tanp-codes.json ==
+== fsh-generated\resources\ImplementationGuide-ta.np.json ==
+WARNING: ImplementationGuide/ta.np: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
+== fsh-generated\resources\Observation-SomeObservation.json ==
+WARNING: Observation/SomeObservation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Patient-SomePatient.json ==
+== fsh-generated\resources\StructureDefinition-tanp-canceltask.json ==
+== fsh-generated\resources\StructureDefinition-tanp-task.json ==
+== fsh-generated\resources\Task-AdditionalTask.json ==
+INFORMATION: Task/AdditionalTask: Task.intent: Reference to experimental CodeSystem http://hl7.org/fhir/request-intent|4.3.0
+INFORMATION: Task/AdditionalTask: Task.code: Reference to experimental CodeSystem https://www.twiin.nl/tanp/CodeSystem/tanp-codes|0.1.0
+INFORMATION: Task/AdditionalTask: Task.input[0].type: Reference to experimental CodeSystem https://www.twiin.nl/tanp/CodeSystem/tanp-codes|0.1.0
+== fsh-generated\resources\Task-CancelTask.json ==
+INFORMATION: Task/CancelTask: Task.intent: Reference to experimental CodeSystem http://hl7.org/fhir/request-intent|4.3.0
+== fsh-generated\resources\Task-NewTask.json ==
+INFORMATION: Task/NewTask: Task.intent: Reference to experimental CodeSystem http://hl7.org/fhir/request-intent|4.3.0
+INFORMATION: Task/NewTask: Task.code: Reference to experimental CodeSystem https://www.twiin.nl/tanp/CodeSystem/tanp-codes|0.1.0
+INFORMATION: Task/NewTask: Task.input[0].type: Reference to experimental CodeSystem https://www.twiin.nl/tanp/CodeSystem/tanp-codes|0.1.0
+INFORMATION: Task/NewTask: Task.input[1].type: Reference to experimental CodeSystem https://www.twiin.nl/tanp/CodeSystem/tanp-codes|0.1.0
+== fsh-generated\resources\ValueSet-tanp-taskparametervalues.json ==
+== fsh-generated\resources\ValueSet-tanp-taskvalues.json ==

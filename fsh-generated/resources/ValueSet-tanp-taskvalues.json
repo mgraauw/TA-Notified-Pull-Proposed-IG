@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "TanpTaskValues",
+  "id": "tanp-taskvalues",
+  "title": "TA Notified Pull Notification Task",
+  "description": "The codes for the TA Notified Pull Notification Task",
+  "url": "https://www.twiin.nl/tanp/ValueSet/tanp-taskvalues",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.twiin.nl/tanp/CodeSystem/tanp-codes",
+        "concept": [
+          {
+            "code": "pull-notification",
+            "display": "Pull Notification"
+          }
+        ]
+      }
+    ]
+  }
+}
